@@ -32,3 +32,13 @@ Ejemplo: Windows NT (Windows 2000, XP, Vista, 7, 8, 10, 11).
 Ejemplo: X-Kernel.
 
 # User vs Kernel mode
+| Modo Kernel                                             | Modo Usuario                                             |
+|--------------------------------------------------------|----------------------------------------------------------|
+| En el modo kernel, el programa tiene acceso directo y sin restricciones a los recursos del sistema. | En modo usuario, el programa de aplicación se ejecuta y se inicia.        |
+| En el modo Kernel, todo el sistema operativo podría dejar de funcionar si se produce una interrupción. | En el modo de usuario, un solo proceso falla si se produce una interrupción.   |
+| El modo kernel también se conoce como modo maestro, modo privilegiado o modo de sistema. | El modo de usuario también se conoce como modo sin privilegios, modo restringido o modo esclavo.   |
+| En el modo kernel, todos los procesos comparten un único espacio de direcciones virtuales. | En el modo de usuario, todos los procesos obtienen un espacio de direcciones virtuales separado. |
+| En el modo kernel, las aplicaciones tienen más privilegios en comparación con el modo usuario. | Mientras que en modo usuario las aplicaciones tienen menos privilegios. |
+| El bit de modo del modo kernel es 0.                   | Mientras que el modo de usuario necesita acceder a los programas del kernel, ya que no puede acceder directamente a ellos. |
+| Como el modo kernel puede acceder tanto a los programas de usuario como a los programas del kernel, no hay restricciones. | El bit de modo del modo de usuario es 1. |
+
