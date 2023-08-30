@@ -1,0 +1,9 @@
+[Unit]
+Description=Servicio de saludo y fecha, actividad 4
+
+[Service]
+Type=simple
+ExecStart=/home/dialjub/Escritorio/Actividad4/saludo.sh
+
+[Install]
+WantedBy=default.target
